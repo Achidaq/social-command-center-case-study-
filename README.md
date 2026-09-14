@@ -4,7 +4,7 @@
 
 [![Case Study](https://img.shields.io/badge/type-product%20engineering-8c7bff)](#case-study)
 [![Status](https://img.shields.io/badge/status-working%20MVP-73ffc5)](#delivery-status)
-[![Tests](https://img.shields.io/badge/tests-verification%20pending-e0a33b)](#verification)
+[![Tests](https://img.shields.io/badge/tests-16%20passed%20at%20checkpoint-73ffc5)](#verification)
 [![Source](https://img.shields.io/badge/source-private-141c2a)](#source-visibility)
 
 ![Social Command Center overview](assets/screenshots/overview.svg)
@@ -82,7 +82,7 @@ The private source contains automated tests covering:
 - Media signature checks, safe names, and byte limits
 - Deterministic rendered UI output
 
-Run `npm ci` and `npm test` in the private source to reproduce the checks. The test command builds the application first. A current passing CI run should be verified before describing this checkpoint as tested; mocked provider tests do not establish live LinkedIn or Meta activation.
+Run `npm ci` and `npm test` in the private source to reproduce the checks. The test command builds the application first. Verification checkpoint: on 14 September 2026, lint, the application build, and all 16 automated tests passed in the private source CI at commit `fc539f7e07b74167351a2cab1f28db0a8d3d8337` (run `34862456843`, on the review branch). The run can be inspected during authorized source review. This is a dated checkpoint, not a guarantee about later changes; mocked provider tests do not establish live LinkedIn or Meta activation.
 
 ## Delivery status
 
