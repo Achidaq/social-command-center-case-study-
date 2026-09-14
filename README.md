@@ -4,7 +4,7 @@
 
 [![Case Study](https://img.shields.io/badge/type-product%20engineering-8c7bff)](#case-study)
 [![Status](https://img.shields.io/badge/status-working%20MVP-73ffc5)](#delivery-status)
-[![Tests](https://img.shields.io/badge/tests-16%20passing-73ffc5)](#verification)
+[![Tests](https://img.shields.io/badge/tests-verification%20pending-e0a33b)](#verification)
 [![Source](https://img.shields.io/badge/source-private-141c2a)](#source-visibility)
 
 ![Social Command Center overview](assets/screenshots/overview.svg)
@@ -28,7 +28,7 @@ Social Command Center explores a more reliable model: one calm workspace with ex
 
 ![Network connection management](assets/screenshots/connections.svg)
 
-The overview screenshot uses representative interface data to demonstrate the intended operating experience. Workflow behavior, validation, persistence, adapters, and tests are implemented in the private source.
+The SVG images are interface mockups with representative data, not browser captures or measured production metrics. Workflow behavior, validation, persistence, adapters, and tests are implemented in the private source.
 
 ## What I built
 
@@ -72,7 +72,7 @@ React 19 · TypeScript · Next.js 16 · Vinext · Vite · Tailwind CSS · Cloudf
 
 ## Verification
 
-The MVP currently passes **16 automated tests** covering:
+The private source contains automated tests covering:
 
 - Approval and publishing transition gates
 - Sandbox idempotency and invalid-draft rejection
@@ -81,6 +81,8 @@ The MVP currently passes **16 automated tests** covering:
 - Token-envelope encryption and context validation
 - Media signature checks, safe names, and byte limits
 - Deterministic rendered UI output
+
+Run `npm ci` and `npm test` in the private source to reproduce the checks. The test command builds the application first. A current passing CI run should be verified before describing this checkpoint as tested; mocked provider tests do not establish live LinkedIn or Meta activation.
 
 ## Delivery status
 
